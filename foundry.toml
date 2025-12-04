@@ -1,0 +1,22 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+optimizer = true
+optimizer_runs = 999999
+via-ir = true
+remappings = [
+    'optimism/=lib/optimism/packages/contracts-bedrock/',
+    "interfaces/=lib/optimism/packages/contracts-bedrock/interfaces",
+    "src/dispute/=lib/optimism/packages/contracts-bedrock/src/dispute",
+    "src/libraries/=lib/optimism/packages/contracts-bedrock/src/libraries",
+    "src/cannon/=lib/optimism/packages/contracts-bedrock/src/cannon",
+    "src/L1/=lib/optimism/packages/contracts-bedrock/src/L1",
+    "src/universal/=lib/optimism/packages/contracts-bedrock/src/universal",
+    '@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts',
+    '@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts',
+    '@rari-capital/solmate/=lib/solmate/',
+    'solady/=lib/solady/src/',
+    '@lib-keccak/=lib/lib-keccak/contracts/lib'
+]
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
