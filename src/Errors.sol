@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.15;
 
+import "optimism/src/dispute/lib/Errors.sol";
+
     /// @notice When the parent game is invalid.
     error InvalidParentGame();
 
@@ -39,9 +41,6 @@ pragma solidity 0.8.15;
 
     /// @notice When the proof has already been verified.
     error AlreadyProven();
-
-    /// @notice When the game is not in progress.
-    error GameNotInProgress();
 
     /// @notice When the proof is invalid.
     error InvalidProof();
